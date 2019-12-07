@@ -1,0 +1,21 @@
+#container{
+    padding: 10px;
+}
+
+#playButtons, #goToButtons{
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#myVideo{
+    width: 100%;
+}
+#vidNum{
+    float: right;
+}
+
+button{
+    width: 100%;
+}
