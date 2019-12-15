@@ -66,14 +66,19 @@ function Snake(){
     this.eat = function(fruit){
         // console.log(fruit);
         if(this.x == fruit.x && this.y == fruit.y){
-            if(this.total >= 0 && this.total <=5){
-                console.log("1");
-                this.total++;
-            }
-            if(this.total >= 6){
-                console.log("2");
-                this.total = this.total + 2;
-            }
+            // if(this.total >= 0 && this.total <=5){
+            //     console.log("1");
+            //     this.total++;
+            // }
+            // if(this.total >= 6){
+            //     console.log("2");
+            //     this.total = this.total + 2;
+            // }
+            // if(this.total == score){
+            //     console.log(score);
+            //     this.winGame();
+            // }
+            this.total++;
             if(this.total == score){
                 console.log(score);
                 this.winGame();
@@ -89,8 +94,9 @@ function Snake(){
             // console.log(this.x, this.y);
             if(this.x === this.tail[i].x && this.y === this.tail[i].y){
                 alert("Game Over!");
-                this.total = 0;
-                this.tail = [];
+                document.location.reload();
+                // this.total = 0;
+                // this.tail = [];
             }
         }
     }

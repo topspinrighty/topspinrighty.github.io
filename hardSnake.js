@@ -9,9 +9,32 @@ function setScore(){
     score = document.getElementById("score").value;
 }
 
+function start(){
+    console.log("2");
+    setup();
+    setup().update();
+}
+
+function disableButton(btn){
+    console.log("3");
+    document.getElementById(btn.id).disabled = true;
+    console.log("4");
+}
+function myFunction(butt){
+    console.log("1");
+    disableButton(butt);
+    start();
+}
+
+
+function increase(){
+    setup().update();
+    setup().update();
+}
+
 var snake;
 
-(function setup() {
+function setup() {
     snake = new Snake();
     fruit = new Fruit();
     fruit.pickLocation();
@@ -36,4 +59,4 @@ var snake;
         const direction = evt.key.replace('Arrow', '');
         snake.changeDirection(direction);
     }))
-}());
+};

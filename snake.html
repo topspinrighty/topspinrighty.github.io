@@ -10,8 +10,11 @@
 </head>
 <body>
     <div id="header"> <h1 style="text-align: center; text-decoration-color: red"> The Snakes Game. </h1>
-        <p style="text-align: center"> Play only if you dare. A game where you move to the harder level by winning the current one, and according to your abilities you get to choose when you win the game. </p></div>
-    <div id="container" style="display: inline;">
+        <p style="text-align: center"> Play only if you dare. A game where you move to the harder level by winning the current one, and according to your abilities you get to choose when you win the game. </p>
+        <button id="startGame" onclick="myFunction(this)" > Start Game </button>
+    </div>
+        
+    <div id="container" style="display: inline;">     
     <div align="center" id="gameGUI" style="width:80%; display: inline-block; float:left; margin-right: 10px;">
     <canvas class="canvas" height="300" width="300" style="background-color: #ADD8E6"></canvas>
     <div class="score"> Score </div>
@@ -23,9 +26,9 @@
     </div>
     <div id="hardButton">
             <div id="info">
-                    <p> Only press the "Do you dare?" button if you're ready to play the harder level of this game </p>
+                    <p> Only press this button if you're ready to play the harder level of this game </p>
                 </div>
-        <button id="hardLevel" onclick="window.open('hardSnake.html', '_blank')"> Do you dare? </button>
+        <button id="hardLevel" onclick="window.open('hardSnake.html', '_blank')"> Harder Button </button>
     </div>
 </body>
 <script src="fruit.js"></script>

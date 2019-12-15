@@ -82,8 +82,10 @@ function Snake(){
             // console.log(this.x, this.y);
             if(this.x === this.tail[i].x && this.y === this.tail[i].y){
                 alert("Game Over!");
-                this.total = 0;
-                this.tail = [];
+                document.location.reload();
+                // this.total = 0;
+                // this.tail = [];
+                // start();
             }
         }
     }

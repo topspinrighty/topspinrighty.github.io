@@ -9,8 +9,11 @@
     <link rel="stylesheet" type="text/css" media="screen" href="snake.css" />
 </head>
 <body>
-    <div id="header"> <h1 style="text-align: center; text-decoration-color: red"> You Dared. </h1>
-        <p style="text-align: center"> This is the final and a more difficult level of the game, please set the score above 10. </p> <p style="text-align: center"> Note: This is an experimental level and may be buggy, but I am looking for new ways to improve it </p> </div>
+    <div id="header"> <h1 style="text-align: center; text-decoration-color: red"> Harder Snake </h1>
+        <p style="text-align: center"> This is a harder version of the game, please click on "Increase speed" four times to get the best experience </p>
+        <button id="start" onclick="myFunction(this)"> Start Game </button>
+        <button id="increase" onclick="increase()"> Increase Speed </button> 
+     </div>
     <div id="container" style="display: inline;">
     <div align="center" id="gameGUI" style="width:80%; display: inline-block; float:left; margin-right: 10px;">
     <canvas class="canvas" height="300" width="300" style="background-color: #ADD8E6"></canvas>

@@ -9,9 +9,21 @@ function setScore(){
     score = document.getElementById("score").value;
 }
 
+
+function start(){
+    setup();
+}
+function disableButton(btn){
+    document.getElementById(btn.id).disabled = true;
+}
+function myFunction(butt){
+    start();
+    disableButton(butt);
+}
+
 var snake;
 
-(function setup() {
+function setup() {
     snake = new Snake();
     fruit = new Fruit();
     fruit.pickLocation();
@@ -35,4 +47,4 @@ var snake;
         const direction = evt.key.replace('Arrow', '');
         snake.changeDirection(direction);
     }))
-}());
+};
